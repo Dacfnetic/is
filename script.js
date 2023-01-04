@@ -26,9 +26,9 @@ const displayPhotos = () => {
             alt: photo.alt_description,
             title: photo.alt_description,
         });
+        image.addEventListener('load', imageLoaded);
         item.appendChild(image);
         imagesContainer.appendChild(item);
-        imagesLoaded();
     });
 }
 const getImages = async () => {
@@ -43,8 +43,8 @@ const getImages = async () => {
 const imagesLoaded = () => {
     imagesLoadess++;
     if(imagesLoadess === totalImages){
-        console.log('ready');
         ready = true;
+        loader.hidden = true;
     }
 }
 window.addEventListener('scroll', () => {
