@@ -17,7 +17,8 @@ h1 {
 }
 
 .images-container {
-  margin: 10rem 30%;
+  margin: 10rem 20%;
+  margin-top: 0px;
 }
 
 .images-container img {
@@ -47,6 +48,6 @@ h1 {
   }
 
   .image-container {
-    margin: 15px;
+    margin: 10px;
   }
 }
