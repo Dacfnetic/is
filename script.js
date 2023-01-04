@@ -26,7 +26,7 @@ const displayPhotos = () => {
             alt: photo.alt_description,
             title: photo.alt_description,
         });
-        image.addEventListener('load', imageLoaded);
+        image.addEventListener('load', imagesLoaded);
         item.appendChild(image);
         imagesContainer.appendChild(item);
     });
